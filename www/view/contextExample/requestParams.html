@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HttpRequest Parameters</title>
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"></link>
+</head>
+<body>
+	<h3>HttpRequest Parameters</h3>
+	<div class="btn-toolbar">
+		<a href="::baseUri::/" class="btn btn-default">Basic</a>
+		<a href="::baseUri::/?name=Jason&amp;like=ufront&amp;like=haxe" class="btn btn-default">GET</a>
+	</div>
+	<form class="form-inline" role="form" method="POST" action="::baseUri::/?name=Jason&amp;like=ufront&amp;like=haxe">
+		<div class="form-group">
+			<input type="text" name="name" placeholder="Enter name">
+			likes
+			<label><input type="checkbox" name="like" value="cats"> Cats</label>
+			<label><input type="checkbox" name="like" value="dogs"> Dogs</label>
+			<button type="submit" class="btn btn-default">POST</button>
+		</div>
+	</form>
+
+	<table class="table">
+		<tr><th>req.query.get('name'):</th><td>::getName::</td></tr>
+		<tr><th>req.query['name']:</th><td>::getName::</td></tr>
+		<tr><th>req.post['name']:</th><td>::postName::</td></tr>
+		<tr><th>req.cookies['name']:</th><td>::cookieName::</td></tr>
+		<tr><th>req.params.getAll('name'):</th><td>::allNames::</td></tr>
+		<tr><th>req.params['name']:</th><td>::paramName::</td></tr>
+		<tr><th>req.params.getAll('like'):</th><td>::allLikes::</td></tr>
+		<tr><th>req.params.get('like'):</th><td>::finalLike::</td></tr>
+		<tr><th>referer:</th><td>::referer::</td></tr>
+		<tr><th>queryString:</th><td>::queryString::</td></tr>
+		<tr><th>postString:</th><td>::postString::</td></tr>
+		<tr><th>params:</th><td><pre>::params::</pre></td></tr>
+		<tr><th>query:</th><td><pre>::query::</pre></td></tr>
+		<tr><th>post:</th><td><pre>::post::</pre></td></tr>
+		<tr><th>files:</th><td><pre>::files::</pre></td></tr>
+		<tr><th>cookies:</th><td><pre>::cookies::</pre></td></tr>
+	</table>
+</body>
+</html>
+

@@ -1,0 +1,16 @@
+{
+	"db": {
+		"host": "localhost",
+		"port": null,
+		"database": "ufront",
+		"user": "",
+		"pass": "",
+		"socket": null
+	},
+	"smtp": {
+		"host": "smtp.yourdomain.com",
+		"port": 587,
+		"user": "",
+		"pass": ""
+	}
+}

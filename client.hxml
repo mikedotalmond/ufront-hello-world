@@ -1,0 +1,14 @@
+#
+# Compile the Client
+#
+
+-cp src
+
+# Compile flags
+-D client
+-dce full
+
+# Output
+-main Client 
+-js www/js/client.js
+-xml dox/js_client.xml

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HttpContext URL Filters</title>
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"></link>
+</head>
+<body>
+	<h3>HttpContext URL Filters</h3>
+	<div class="btn-toolbar">
+		<a href="::filteredUri::" class="btn btn-default">Load using mod_rewrite</a>
+		<a href="/index.n::filteredUri::" class="btn btn-default">Load using pathinfo</a>
+	</div>
+	<table class="table">
+		<tr><th>Request URI:</th><td><code>::unfilteredUri::</code></td></tr>
+		<tr><th>Filtered URI:</th><td><code>::filteredUri::</code></td></tr>
+		<tr><th>With a pathinfo filter:</th><td><code>::uri1::</code> becomes <code>::uri1AfterFilters::</code></td></tr>
+		<tr><th>With a pathinfo and sub-directory filter:</th><td><code>::uri2::</code> becomes <code>::uri2AfterFilters::</code></td></tr>
+	</table>
+</body>
+</html>
+

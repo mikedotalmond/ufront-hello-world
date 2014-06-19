@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ufront - ::title::</title>
+	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/superhero/bootstrap.min.css"></link>
+	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"></link>
+	<link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+</head>
+<body>
+	<div class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">Ufront</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="/features/"><i class="fa fa-star"></i><span>&nbsp;Features</span></a></li>
+				<li><a href="/quickstart/"><i class="fa fa-flag"></i><span>&nbsp;Quick Start</span></a></li>
+				<li><a href="/wiki/"><i class="fa fa-book"></i><span>&nbsp;Wiki</span></a></li>
+				<li><a href="/wiki/"><i class="fa fa-cubes"></i><span>&nbsp;API</span></a></li>
+				<li><a href="/community/"><i class="fa fa-group"></i><span>&nbsp;Community</span></a></li>
+			</ul>
+			<ul class="nav navbar-nav pull-right">
+				<li id="extras" class="dropdown">
+					<a href="/examples" data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-gears"></i><span>&nbsp;Examples <b class="caret"></b></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="/examples/">Examples</a></li>
+						<li><a href="/examples/context">Context</a></li>
+						<li><a href="/examples/controller">Controller</a></li>
+						<li><a href="/examples/views">Views</a></li>
+						<li><a href="/examples/model">Model</a></li>
+						<li><a href="/examples/auth">Auth</a></li>
+						<li><a href="/examples/injection">Injection</a></li>
+						<li><a href="/examples/mail">Mail</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	::viewContent::
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>

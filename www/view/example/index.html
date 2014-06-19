@@ -1,0 +1,46 @@
+<div class="jumbotron">
+	<div class="container">
+		<h1>::header::</h1>
+		<p>::description::</p>
+	</div>
+</div>
+<div class="container">
+	<ol class="breadcrumb">
+		<li><a href="/">Ufront</a></li>
+		::foreach parents::
+			<li><a href="::url::">::name::</a></li>
+		::end::
+		<li class="active">::title::</li>
+	</ol>
+	<div class="row">
+		<div class="col-sm-2">
+			<ul class="nav nav-pills nav-stacked">
+				::foreach links::
+					<li::if (url==active):: class="active"::end::><a href="::url::">::name::</a></li>
+				::end::
+			</ul>
+		</div>
+		<div class="col-sm-10">
+			
+			::introduction::
+
+			::foreach examples::
+				<div class="row example-row">
+					<div class="col-md-6">
+						::explanation::
+						<p>Examples:</p>
+						<ul>
+							::foreach links::
+								<li><a href="::baseUri::/::__current__::" target="iframe_::name::">::__current__::</a></li>
+							::end::
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<iframe src="::baseUri::/::iframe::" name="iframe_::name::"></iframe>
+					</div>
+				</div>
+				<hr />
+			::end::
+		</div>
+	</div>
+</div>

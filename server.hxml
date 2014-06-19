@@ -1,0 +1,34 @@
+# The "ufront" haxelib has a dependency on many of the libs we'll need.
+-lib ufront:1.0.0-rc.1
+-cp src
+
+# These libraries are optional, but used in the hello world app to demonstrate usage.
+# Please use markdown from GIT:
+# haxelib git markdown https://github.com/dpeek/haxe-markdown.git master src
+-lib markdown
+-lib ufront-mail
+-lib mustache
+-lib hxtemplo
+-lib detox:1.0.0-rc.6
+
+# "-D server" is used by ufront to differentiate between code that should run in the browser or on a server.
+-D server
+# "-debug" is used in development, it enables stack traces when you have errors, and stops mod_neko caching.
+# Probably turn it off when you deploy to production.
+-debug
+
+-main Server
+--each
+
+# Neko
+--remap php:neko
+-neko www/index.n
+-xml dox/neko.xml
+
+--next
+
+# PHP
+--remap neko:php
+--php-lib php
+-php www
+-xml dox/php.xml
