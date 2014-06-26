@@ -2,5 +2,6 @@
 	"title": "ClassHomie",
 	"generalEmail": "hello@classhomie.com",
 	"techEmail": "your email",
-	"supportPhone": "your phone"
+	"supportPhone": "your phone",
+	"supportEmail":"support@yourdomain.com"
 }

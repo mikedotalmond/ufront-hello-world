@@ -10,6 +10,7 @@
 -lib mustache
 -lib hxtemplo
 -lib detox:1.0.0-rc.6
+-lib mtwin
 
 # "-D server" is used by ufront to differentiate between code that should run in the browser or on a server.
 -D server

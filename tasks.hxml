@@ -1,6 +1,7 @@
 -lib ufront-uftasks:1.0.0-beta.5
 -lib ufront-ufadmin:1.0.0-beta.4
 -lib ufront-mail
+-lib mtwin
 
 -cp src
 -D server
